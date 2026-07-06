@@ -4,15 +4,27 @@ Welcome to the OctoAcme Project Management Process Documentation. This directory
 
 ## Overview
 
-OctoAcme operates on a structured yet iterative project lifecycle that spans five key phases: Initiation, Planning, Execution, Release, and Retrospective. Our approach is grounded in five core principles: customer-first focus, iterative delivery of small testable increments, clear ownership with designated Project Managers and Product Leads, data-informed decision-making, and psychological safety that encourages feedback and learning. 
+OctoAcme operates on a structured yet iterative project lifecycle grounded in five core principles: customer-first focus, iterative delivery of small testable increments, clear ownership with designated Project Managers and Product Leads, data-informed decision-making, and psychological safety that encourages feedback and learning. Our processes are designed to be lightweight yet structured, enabling teams to deliver value efficiently while maintaining alignment across stakeholders.
 
-Projects begin with a lightweight One-pager that establishes the business need, success metrics, stakeholders, and initial timeline—serving as the decision gate before committing resources to planning. Once approved, teams break work into prioritized backlog items with clear acceptance criteria, estimate scope, and define the Definition of Done. Execution follows a consistent team rhythm of daily standups (15 minutes), weekly delivery syncs, and sprint-based iterations, with work progressing through a project board with columns: Backlog, Ready, In Progress, In Review, QA, and Done.
+### Project Lifecycle
 
-Quality assurance is embedded throughout the workflow rather than isolated at the end. Teams implement unit tests for new logic, integration tests where applicable, and end-to-end smoke tests for critical flows before release. Security scanning is integrated into the CI pipeline, and manual QA validates feature acceptance when needed. The release process is standardized to reduce risk, requiring all acceptance criteria to be met, tests to pass, and rollback/mitigation plans to be documented before deployment.
+OctoAcme's project lifecycle spans five key phases:
 
-OctoAcme defines clear roles and responsibilities across the organization. Developers design, build, test, and deliver features while participating in design and code reviews; Product Managers own the product vision, prioritize the backlog, and measure outcomes against success metrics; and Project Managers coordinate delivery activities, manage risks and dependencies, and facilitate communication across stakeholders. Cross-functional collaboration is reinforced through a consistent communication cadence: weekly syncs between PM and Product Manager, twice-weekly standups for delivery teams, monthly stakeholder updates, and ad-hoc escalations as needed.
+1. **Initiation** — Define the business need, establish success metrics, identify stakeholders, and create a lightweight One-pager that serves as the decision gate before committing resources.
+2. **Planning** — Break work into prioritized backlog items with clear acceptance criteria, estimate scope, define the Definition of Done, and identify dependencies.
+3. **Execution** — Follow a consistent team rhythm of daily standups (15 min), weekly delivery syncs, and sprint-based iterations. Work progresses through a project board with columns: Backlog, Ready, In Progress, In Review, QA, and Done.
+4. **Release** — Standardize the release process with pre-release requirements (tests passing, security scans complete, rollback plans documented), deployment verification, and post-deploy monitoring.
+5. **Retrospective** — Hold structured retrospectives after each sprint, release, or milestone to capture learnings and define prioritized action items for continuous improvement.
 
-Continuous improvement is woven into the project lifecycle through structured retrospectives held after each sprint, release, or important milestone. These sessions follow a consistent format: reviewing what went well, identifying improvements, and defining 2–3 prioritized action items with clear owners and due dates. A Risk Register is maintained throughout execution to track identified risks with their impact, likelihood, mitigation plans, and status, reviewed weekly during syncs.
+### Workflows & Quality Assurance
+
+Pull requests remain small (≤400 lines when possible), include issue links and acceptance criteria, and require automated testing and at least one approval before merging. Quality assurance is embedded throughout the workflow with unit tests for new logic, integration tests where applicable, and end-to-end smoke tests for critical flows. Security scanning is integrated into the CI pipeline, and manual QA validates feature acceptance when needed.
+
+Risk management is formalized through a Risk Register maintained during execution, tracking identified risks with their impact, likelihood, mitigation plans, and status—reviewed weekly during syncs. A formal escalation path (Team → PM → Product Lead → Sponsor) ensures blockers and risks are surfaced and resolved efficiently.
+
+### Roles & Communication
+
+OctoAcme defines clear roles across the organization: **Developers** design, build, test, and deliver features while participating in design and code reviews; **Product Managers** own the product vision, prioritize the backlog, and measure outcomes; and **Project Managers** coordinate delivery, manage risks and dependencies, and facilitate cross-stakeholder communication. A consistent communication cadence reinforces collaboration: weekly syncs between PM and Product Manager, twice-weekly standups for delivery teams, monthly stakeholder updates, and ad-hoc escalations as needed.
 
 ## Process Documents
 
@@ -37,11 +49,11 @@ Continuous improvement is woven into the project lifecycle through structured re
 
 ## Key Principles
 
-- **Customer-first**: Prioritize customer value and usability
-- **Iterative delivery**: Deliver small, testable increments
-- **Clear ownership**: Each project has named Project Manager and Product Lead
-- **Data-informed decisions**: Measure impact and iterate based on evidence
-- **Psychological safety**: Encourage feedback and learning
+- **Customer-first** — Prioritize customer value and usability
+- **Iterative delivery** — Deliver small, testable increments
+- **Clear ownership** — Each project has named Project Manager and Product Lead
+- **Data-informed decisions** — Measure impact and iterate based on evidence
+- **Psychological safety** — Encourage feedback and learning
 
 ## Maintaining These Docs
 
